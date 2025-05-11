@@ -6,7 +6,7 @@
 /*   By: mikelitoris <mikelitoris@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:12:09 by mikelitoris       #+#    #+#             */
-/*   Updated: 2025/03/11 20:01:59 by mikelitoris      ###   ########.fr       */
+/*   Updated: 2025/05/10 17:55:16 by mikelitoris      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 Zombie::Zombie()
 {
-	std::cout << "A Unknown Zombie is born" << std::endl;
 }
 
 Zombie::~Zombie()
@@ -30,4 +29,5 @@ void	Zombie::announce()
 void	Zombie::set_name(std::string name)
 {
 	this->name = name;
+	std::cout << "Zombie " << this->name << " created" << std::endl;
 }

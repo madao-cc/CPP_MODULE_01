@@ -6,7 +6,7 @@
 /*   By: mikelitoris <mikelitoris@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 15:15:04 by mikelitoris       #+#    #+#             */
-/*   Updated: 2025/03/12 15:40:19 by mikelitoris      ###   ########.fr       */
+/*   Updated: 2025/05/05 12:17:09 by mikelitoris      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	Harl::error()
 
 void	Harl::complain(std::string level)
 {
-	void	(Harl::*complaints[4])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	void	(Harl::*complaints[4])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error}; // Array of pointers to member functions
 	std::string	levels[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	
 	for (int i = 0; i < 4; i++)

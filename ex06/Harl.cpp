@@ -6,7 +6,7 @@
 /*   By: mikelitoris <mikelitoris@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 16:03:28 by mikelitoris       #+#    #+#             */
-/*   Updated: 2025/03/12 16:23:34 by mikelitoris      ###   ########.fr       */
+/*   Updated: 2025/05/05 12:35:41 by mikelitoris      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,13 +58,16 @@ void	Harl::complain(std::string level)
 	{
 		case 0:
 			(this->*complaints[0])();
-			[[fallthrough]];
+			this->complain("INFO");
+			break;
 		case 1:
 			(this->*complaints[1])();
-			[[fallthrough]];
+			this->complain("WARNING");
+			break;
 		case 2:
 			(this->*complaints[2])();
-			[[fallthrough]];
+			this->complain("ERROR");
+			break;
 		case 3:
 			(this->*complaints[3])();
 			break ;

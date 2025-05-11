@@ -6,7 +6,7 @@
 /*   By: mikelitoris <mikelitoris@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 09:51:23 by mikelitoris       #+#    #+#             */
-/*   Updated: 2025/03/12 12:22:55 by mikelitoris      ###   ########.fr       */
+/*   Updated: 2025/05/10 18:21:17 by mikelitoris      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ int main(int argc, char **argv)
 		std::cout << "Error: could not create the output file" << std::endl;
 		return (1);
 	}
+
 	// Read the input file into a string
 	std::string	content;
 	std::string	line;
@@ -80,6 +81,7 @@ int main(int argc, char **argv)
 		// Update the position to after the replaced substring
 		pos = found + old_word.length();
 	}
+	
 	// Append the rest of the string
 	result.append(content, pos, content.length() - pos);
 
