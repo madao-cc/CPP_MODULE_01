@@ -6,7 +6,7 @@
 /*   By: mikelitoris <mikelitoris@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 09:51:23 by mikelitoris       #+#    #+#             */
-/*   Updated: 2025/05/10 18:21:17 by mikelitoris      ###   ########.fr       */
+/*   Updated: 2025/05/13 17:59:56 by mikelitoris      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	// Check if the correct number of arguments is passed
 	if (argc != 4)
 	{
-		std::cout << "usage: replace <file> old_word new_word" << std::endl;
+		std::cout << "Error: format: ./ex04 <filename> old_word new_word" << std::endl;
 		return (1);
 	}
 	// Check if the old_word is empty
