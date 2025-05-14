@@ -6,7 +6,7 @@
 /*   By: mikelitoris <mikelitoris@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 18:47:38 by mikelitoris       #+#    #+#             */
-/*   Updated: 2025/03/11 19:03:36 by mikelitoris      ###   ########.fr       */
+/*   Updated: 2025/05/13 16:35:43 by mikelitoris      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,13 @@ int	main(void)
 
 	zombie = newZombie("John");
 	zombie->announce();
-	randomChump("Paul");
 	delete zombie;
+	
+	zombie = newZombie("");
+	zombie->announce();
+	delete zombie;
+	
+	randomChump("Paul");
+	
 	return (0);
 }
