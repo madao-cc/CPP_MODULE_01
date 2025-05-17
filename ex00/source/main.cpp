@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mikelitoris <mikelitoris@student.42.fr>    +#+  +:+       +#+        */
+/*   By: madao-da <madao-da@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 18:47:38 by mikelitoris       #+#    #+#             */
-/*   Updated: 2025/05/13 16:35:43 by mikelitoris      ###   ########.fr       */
+/*   Updated: 2025/05/17 16:08:56 by madao-da         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main(void)
 	zombie = newZombie("");
 	zombie->announce();
 	delete zombie;
-	
+
 	randomChump("Paul");
 	
 	return (0);

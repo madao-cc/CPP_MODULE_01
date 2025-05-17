@@ -6,7 +6,7 @@
 /*   By: mikelitoris <mikelitoris@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 08:29:53 by mikelitoris       #+#    #+#             */
-/*   Updated: 2025/04/29 17:07:24 by mikelitoris      ###   ########.fr       */
+/*   Updated: 2025/05/17 16:14:07 by madao-da         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	main(void)
 	std::string	*stringPTR = &string;
 	std::string	&stringREF = string;
 
-	std::cout << "Address of the string: " << string << std::endl;
+	std::cout << "Address of the string: " << &string << std::endl;
 	std::cout << "Address of the stringPTR: " << stringPTR << std::endl;
 	std::cout << "Address of the stringREF: " << &stringREF << std::endl;
 
